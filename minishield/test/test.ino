@@ -1,4 +1,4 @@
-#include <minishield.h>
+#include "minishield.h"
 
 #define END while(1);
 #define LOG(x) Serial.println(x)
@@ -17,20 +17,22 @@ void loop()
 {
     LOG("1) LED test");
     
+    #define LTIME 300
+    
     color(100, 0, 0);
-    delay(800);
+    delay(LTIME);
     color(255, 0, 0);
-    delay(800);
+    delay(LTIME);
     
     color(0, 100, 0);
-    delay(800);
+    delay(LTIME);
     color(0, 255, 0);
-    delay(800);
+    delay(LTIME);
     
     color(0, 0, 100);
-    delay(800);
+    delay(LTIME);
     color(0, 0, 255);
-    delay(800);
+    delay(LTIME);
     
     color(0, 0, 0);
     
@@ -71,6 +73,50 @@ void loop()
     
     OK("done.\n");
     delay(500);
+    
+    // -----------------------------------------------------------------------
+    
+    LOG("4) IO");
+    
+    LOG("   D -> A");
+    
+    pinMode(A4, INPUT);
+    pinMode(A5, INPUT);
+    pinMode(2, OUTPUT);
+    pinMode(3, OUTPUT);
+    
+    digitalWrite(2, LOW);
+    digitalWrite(3, LOW);
+    if (digitalRead(A4) == HIGH || digitalRead(A5) == HIGH) ERR("HIGH");
+    
+    digitalWrite(2, HIGH);
+    digitalWrite(3, LOW);
+    if (digitalRead(A4) == HIGH || digitalRead(A5) == LOW) ERR("D2 LOW");
+    
+    digitalWrite(2, LOW);
+    digitalWrite(3, HIGH);
+    if (digitalRead(A4) == LOW || digitalRead(A5) == HIGH) ERR("D2 LOW");
+    
+    LOG("   A -> D");
+    
+    pinMode(A4, OUTPUT);
+    pinMode(A5, OUTPUT);
+    pinMode(2, INPUT);
+    pinMode(3, INPUT);
+    
+    digitalWrite(A4, LOW);
+    digitalWrite(A5, LOW);
+    if (digitalRead(2) == HIGH || digitalRead(3) == HIGH) ERR("HIGH");
+    
+    digitalWrite(A4, HIGH);
+    digitalWrite(A5, LOW);
+    if (digitalRead(2) == HIGH || digitalRead(3) == LOW) ERR("D2 LOW");
+    
+    digitalWrite(A4, LOW);
+    digitalWrite(A5, HIGH);
+    if (digitalRead(2) == LOW || digitalRead(3) == HIGH) ERR("D2 LOW");
+    
+    OK("done.\n");
     
     // -----------------------------------------------------------------------
     

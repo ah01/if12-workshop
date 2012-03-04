@@ -1686,13 +1686,13 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="SparkFun-Boards" package="DUEMILANOVE_VIAS" value="ARDUINO_SHIELDNO_SILK" x="0" y="53.34" rot="R270"/>
+<element name="U1" library="SparkFun-Boards" package="DUEMILANOVE_VIAS" value="ARDUINO SHIELD" x="0" y="53.34" rot="R270"/>
 <element name="R1" library="rcl" package="R1206" value="" x="12.7" y="45.085" rot="R90"/>
 <element name="R2" library="rcl" package="R1206" value="" x="15.24" y="45.085" rot="R90"/>
 <element name="R3" library="rcl" package="R1206" value="" x="17.78" y="45.085" rot="R90"/>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_TALL" value="SWITCH-MOMENTARY-2" x="21.59" y="19.05" rot="R90"/>
-<element name="S2" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_TALL" value="SWITCH-MOMENTARY-2" x="8.89" y="19.05" rot="R90"/>
-<element name="S3" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="2.54" y="41.91" rot="R270"/>
+<element name="S1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_TALL" value="B" x="21.59" y="19.05" rot="R90"/>
+<element name="S2" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_TALL" value="A" x="8.89" y="19.05" rot="R90"/>
+<element name="S3" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="Reset" x="2.54" y="41.91" rot="R270"/>
 <element name="JP1" library="pinhead" package="1X03" value="" x="34.29" y="12.7" rot="R90"/>
 <element name="U$1" library="misc" package="LOGO-OSH" value="LOGO-OSH" x="25.781" y="42.0624"/>
 <element name="CON1" library="misc" package="TWIG-90-SMD" value="TWIG-90-SMD" x="40.64" y="26.67" rot="R270"/>

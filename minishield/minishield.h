@@ -9,17 +9,17 @@
 
 #define TEMP 3
 
-void minishield_setup() {
-    
+void minishield_setup()
+{    
     pinMode(LED_R, OUTPUT);
     pinMode(LED_G, OUTPUT);
     pinMode(LED_B, OUTPUT);
 
     pinMode(BTN_A, INPUT);
-    digitalWrite(BTN_A, HIGH);
+    digitalWrite(BTN_A, HIGH); // pull-up 
     
     pinMode(BTN_B, INPUT);
-    digitalWrite(BTN_B, HIGH);
+    digitalWrite(BTN_B, HIGH); // pull-up
 }
 
 void color(byte r, byte g, byte b)

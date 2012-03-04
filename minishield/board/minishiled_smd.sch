@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8565,20 +8565,20 @@ We've spent an enormous amount of time creating and checking these footprints an
 </class>
 </classes>
 <parts>
-<part name="U1" library="SparkFun-Boards" deviceset="ARDUINO_SHIELD" device="NO_SILK"/>
+<part name="U1" library="SparkFun-Boards" deviceset="ARDUINO_SHIELD" device="NO_SILK" value="ARDUINO SHIELD"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R1206"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R1206"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R1206"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device=""/>
+<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="" value="B"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device=""/>
+<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="" value="A"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="-SMD-1101NE"/>
+<part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="-SMD-1101NE" value="Reset"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -8811,7 +8811,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="S2" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="48.26" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
-<label x="-7.62" y="50.8" size="1.778" layer="95"/>
+<label x="-8.89" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -8823,7 +8823,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="48.26" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
-<label x="15.24" y="50.8" size="1.778" layer="95"/>
+<label x="13.97" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -8841,8 +8841,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 </segment>
 <segment>
 <pinref part="S3" gate="G$1" pin="2"/>
-<wire x1="-43.18" y1="48.26" x2="-43.18" y2="55.88" width="0.1524" layer="91"/>
-<label x="-50.8" y="53.34" size="1.778" layer="95"/>
+<wire x1="-43.18" y1="48.26" x2="-43.18" y2="53.34" width="0.1524" layer="91"/>
+<label x="-41.91" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A4/SDA" class="0">
